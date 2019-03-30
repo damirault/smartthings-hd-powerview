@@ -234,7 +234,7 @@ def _fetchAllShadesCallback(response) {
           shadeLabel = "${it.id} ${it.name}"
         }
         def enumLabel = "${shadeLabel} (${it.id})"
-        shadeConfig.label = "Blind ${shadeLabel}" // plain english name
+        shadeConfig.label = "${shadeLabel} Shade" // plain english name
         shadeConfig.enumLabel = enumLabel // awkward label for use with prefs
         shadeConfig.deviceNetworkId = getDeviceId('shade', it.id)
 
@@ -290,7 +290,7 @@ def _fetchAllScenesCallback(response) {
         }
 
         def enumLabel = "${sceneLabel} (${it.id})"
-        sceneConfig.label = "Blinds ${sceneLabel}" // plain english name
+        sceneConfig.label = "Shades ${sceneLabel}" // plain english name
         sceneConfig.enumLabel = enumLabel // awkward label for use with prefs
         sceneConfig.deviceNetworkId = getDeviceId('scene', it.id)
 
@@ -346,7 +346,7 @@ def _fetchAllSceneCollectionsCallback(response) {
         }
 
         def enumLabel = "${sceneCollectionLabel} (${it.id})"
-        sceneCollectionConfig.label = "Blinds ${sceneCollectionLabel}" // plain english name
+        sceneCollectionConfig.label = "Shades ${sceneCollectionLabel}" // plain english name
         sceneCollectionConfig.enumLabel = enumLabel // awkward label for use with prefs
         sceneCollectionConfig.deviceNetworkId = getDeviceId('scenecollection', it.id)
 
